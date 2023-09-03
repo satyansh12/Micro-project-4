@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro_project_4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>calc</h1> 
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="display" placeholder="0" >
+                </div>
+                <div class="but">
+                    <div>
+                        <input type="button" value="7" onclick="appendToDisplay('7')">
+                        <input type="button" value="8" onclick="appendToDisplay('8')">
+                        <input type="button" value="9" onclick="appendToDisplay('9')">
+                        <input id="del" type="button" value="DEL" onclick="deleteLastChar()">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="appendToDisplay('4')">
+                        <input type="button" value="5" onclick="appendToDisplay('5')">
+                        <input type="button" value="6" onclick="appendToDisplay('6')">
+                        <input type="button" value="+" onclick="appendToDisplay('+')">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="appendToDisplay('1')">
+                        <input type="button" value="2" onclick="appendToDisplay('2')">
+                        <input type="button" value="3" onclick="appendToDisplay('3')">
+                        <input type="button" value="-" onclick="appendToDisplay('-')">
+                    </div>
+                    <div>
+                        <input type="button" value="." onclick="appendToDisplay('.')">
+                        <input type="button" value="0" onclick="appendToDisplay('0')">
+                        <input type="button" value="/" onclick="appendToDisplay('/')">
+                        <input type="button" value="x" onclick="appendToDisplay('x')">
+                    </div>
+                    <div class="bb">
+                        <input id="reset" type="button" value="RESET" onclick="clearDisplay()">
+                        <input id="equal" type="button" value="=" onclick="calculate()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
