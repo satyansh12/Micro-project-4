@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3B4664;
+}
+
+h1{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.display{
+    margin: 1rem 0px;
+}
+
+.calculator form .display input{
+    width: 536px;
+    height: 132px;
+    flex-shrink: 0;
+    border-radius: 12px; 
+    background: #181F32;
+}
+
+
+.but{
+    background: #252D44;
+    border-radius: 12px;
+    width: 536px;
+    height: 487px;
+    flex-shrink: 0;
+    padding: 25px;
+}
+
+#del{
+   background: #647299;
+   color: #FFFFFF;
+}
+.calculator form .but input{
+    width: 100px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #EAE3DB;
+    cursor: pointer;
+    color: #3B4664;
+    text-align: center;
+    font-family: Inter; 
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 9px;
+
+}
+
+.calculator form .but .bb input{
+    width: 222.436px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #EAE3DB;
+    cursor: pointer;
+    color: #3B4664;
+    text-align: center;
+    font-family: Inter; 
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+#reset{
+    background-color: #647299;
+    color: #FFFFFF; 
+}
+
+#equal{
+    background-color: #D13F30;
+    color: #FFFFFF;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+ 
+}
+
+
+form .display input{
+    flex: 1;
+    color: #FFF;
+    text-align: right;
+    font-family: Segoe UI;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-right: 20px;
+}
